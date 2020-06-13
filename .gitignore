@@ -37,7 +37,5 @@ _design
 _content
 _tmp
 dist
-build
-_build
 lib
 bin
