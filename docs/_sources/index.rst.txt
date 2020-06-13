@@ -7,9 +7,10 @@ Welcome to pfdocs
 =================
 
 
-.. highlight: text
+.. code-block:: make
 
    github:
+      @make clean
       @rm -rfv docs/
       @make html
       @cp -a build/html/. ./docs

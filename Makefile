@@ -15,6 +15,8 @@ help:
 .PHONY: help Makefile
 
 github:
+	@make clean
+	@rm -rfv docs/
 	@make html
 	@cp -a build/html/. ./docs
 
