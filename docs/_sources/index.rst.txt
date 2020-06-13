@@ -15,6 +15,15 @@ Welcome to pfdocs
       @make html
       @cp -a build/html/. ./docs
 
+.. code-block:: make
+
+   publish:
+      @make clean
+      @rm -rfv docs/
+      @make html
+      @cp -a build/html/. ./docs
+      @git commit -am "update content"
+      @git push
 
 
 .. toctree::

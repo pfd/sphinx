@@ -20,6 +20,14 @@ github:
 	@make html
 	@cp -a build/html/. ./docs
 
+publish:
+	@make clean
+	@rm -rfv docs/
+	@make html
+	@cp -a build/html/. ./docs
+	@git commit -am "update content"
+	@git push
+
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile

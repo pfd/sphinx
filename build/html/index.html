@@ -153,6 +153,15 @@
    @cp -a build/html/. ./docs
 </pre></div>
 </div>
+<div class="highlight-make"><div class="highlight"><pre><span></span><span class="nf">publish</span><span class="o">:</span>
+   @make clean
+   @rm -rfv docs/
+   @make html
+   @cp -a build/html/. ./docs
+   @git commit -am <span class="s2">&quot;update content&quot;</span>
+   @git push
+</pre></div>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 </div>
