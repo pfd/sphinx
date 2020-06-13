@@ -7,7 +7,7 @@ Welcome to pfdocs
 =================
 
 
-.. highlight: make
+.. highlight: text
 
    github:
       @rm -rfv docs/
