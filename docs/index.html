@@ -79,7 +79,10 @@
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Welcome to pfdocs</a><ul>
+<li><a class="reference internal" href="#autobuilding">Autobuilding</a><ul>
 <li><a class="reference internal" href="#cool-resources">Cool Resources</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
@@ -149,6 +152,7 @@
             
   <div class="section" id="welcome-to-pfdocs">
 <h1>Welcome to pfdocs<a class="headerlink" href="#welcome-to-pfdocs" title="Permalink to this headline">¶</a></h1>
+<p>Hi. I’m Pete, and I write technical docs.</p>
 <div class="highlight-make"><div class="highlight"><pre><span></span><span class="nf">github</span><span class="o">:</span>
    @make clean
    @rm -rfv docs/
@@ -165,11 +169,43 @@
    @git push
 </pre></div>
 </div>
+<div class="section" id="autobuilding">
+<h2>Autobuilding<a class="headerlink" href="#autobuilding" title="Permalink to this headline">¶</a></h2>
+<p>You can set up auto-building on every save of a <code class="docutils literal"><span class="pre">.rst</span></code> file:</p>
+<ol class="arabic">
+<li><p class="first">Activate virtualenv, if not already active:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Install watchdog tools, if not already installed:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">watchdog</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Run watchmedo to monitor all .rst files:</p>
+</li>
+</ol>
+<dl class="docutils">
+<dt>watchmedo shell-command </dt>
+<dd>–patterns=”<em>.rst” –ignore-pattern=’_build/</em>’ –recursive –wait –command=’make html’</dd>
+</dl>
 <div class="toctree-wrapper compound">
 </div>
 <div class="section" id="cool-resources">
-<h2>Cool Resources<a class="headerlink" href="#cool-resources" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="http://daler.github.io/sphinxdoc-test/">Publishing Sphinx-generated docs on GitHub Pages</a></p>
+<h3>Cool Resources<a class="headerlink" href="#cool-resources" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first"><a class="reference external" href="http://daler.github.io/sphinxdoc-test/">Publishing Sphinx-generated docs on GitHub Pages</a></p>
+</li>
+<li><p class="first"><a class="reference external" href="https://www.docslikecode.com/">Docs Like Code</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://www.docslikecode.com/articles/github-pages-python-sphinx/">Yes You Can Use GitHub Pages with Python Sphinx</a></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
