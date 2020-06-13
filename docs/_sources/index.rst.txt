@@ -6,6 +6,14 @@
 Welcome to pfdocs
 =================
 
+```
+github:
+   @rm -rfv docs/
+	@make html
+	@cp -a build/html/. ./docs
+```
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
