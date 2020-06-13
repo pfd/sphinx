@@ -6,12 +6,14 @@
 Welcome to pfdocs
 =================
 
-```
-github:
-   @rm -rfv docs/
-	@make html
-	@cp -a build/html/. ./docs
-```
+
+.. highlight: make
+
+   github:
+      @rm -rfv docs/
+      @make html
+      @cp -a build/html/. ./docs
+
 
 
 .. toctree::
