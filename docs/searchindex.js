@@ -1,1 +1,0 @@
-Search.setIndex({docnames:["index"],envversion:52,filenames:["index.rst"],objects:{},objnames:{},objtypes:{},terms:{build:0,clean:0,commit:0,content:0,doc:0,git:0,github:0,html:0,index:0,make:0,modul:0,page:0,publish:0,push:0,rfv:0,search:0,updat:0},titles:["Welcome to pfdocs"],titleterms:{indic:0,pfdoc:0,tabl:0,welcom:0}})

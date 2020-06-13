@@ -30,7 +30,10 @@ Welcome to pfdocs
    :maxdepth: 2
    :caption: Contents:
 
+Cool Resources
+++++++++++++++
 
+`Publishing Sphinx-generated docs on GitHub Pages <http://daler.github.io/sphinxdoc-test/>`_
 
 Indices and tables
 ==================
