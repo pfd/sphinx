@@ -28,7 +28,7 @@ Hi. I'm Pete, and I write technical docs.
 
 
 Autobuilding
-************
+============
 
 You can set up auto-building on every save of a ``.rst`` file:
 
