@@ -6,6 +6,18 @@
 Welcome to pfdocs
 =================
 
+.. toctree::
+   :maxdepth: 4
+   :caption: Getting Started
+
+   /getting-started/index
+
+:Author: pfd
+
+.. note::
+
+   This is a work in progress.
+
 Hi. I'm Pete, and I write technical docs.
 
 .. code-block:: make
@@ -49,12 +61,8 @@ You can set up auto-building on every save of a ``.rst`` file:
       --wait \
       --command='make html'
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
 Cool Resources
-++++++++++++++
+--------------
 
 - `Publishing Sphinx-generated docs on GitHub Pages <http://daler.github.io/sphinxdoc-test/>`_
 - `Docs Like Code <https://www.docslikecode.com/>`_
