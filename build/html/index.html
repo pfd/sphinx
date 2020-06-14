@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to pfdocs &mdash; DevNet Create Demo 1.0 documentation</title>
+  <title>Welcome to pfdocs &mdash; pfdocs 1.0 documentation</title>
   
 
   
@@ -46,7 +46,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> DevNet Create Demo
+            <a href="#" class="icon icon-home"> pfdocs
           
 
           
@@ -100,7 +100,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">DevNet Create Demo</a>
+          <a href="#">pfdocs</a>
         
       </nav>
 
@@ -186,10 +186,14 @@
 <li><p class="first">Run watchmedo to monitor all .rst files:</p>
 </li>
 </ol>
-<dl class="docutils">
-<dt>watchmedo shell-command </dt>
-<dd>–patterns=”<em>.rst” –ignore-pattern=’_build/</em>’ –recursive –wait –command=’make html’</dd>
-</dl>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>watchmedo shell-command <span class="se">\</span>
+   --patterns<span class="o">=</span><span class="s2">&quot;*.rst&quot;</span> <span class="se">\</span>
+   --ignore-pattern<span class="o">=</span><span class="s1">&#39;_build/*&#39;</span> <span class="se">\</span>
+   --recursive <span class="se">\</span>
+   --wait <span class="se">\</span>
+   --command<span class="o">=</span><span class="s1">&#39;make html&#39;</span>
+</pre></div>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="section" id="cool-resources">
@@ -228,7 +232,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, Anne Gentle.
+        &copy; Copyright 2020, pfd.
 
     </p>
   </div>

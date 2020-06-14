@@ -12,16 +12,20 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+
+import os
+import sys
+from datetime import datetime
+sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- Project information -----------------------------------------------------
+year = datetime.now().year
+author = u'pfd'
+project = u'pfdocs'
+copyright = u'%d, %s' % (year, author)
 
-project = 'DevNet Create Demo'
-copyright = '2019, Anne Gentle'
-author = 'Anne Gentle'
+
 
 # The short X.Y version
 version = ''
@@ -130,7 +134,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'DevNetCreateDemo.tex', 'DevNet Create Demo Documentation',
-     'Anne Gentle', 'manual'),
+     'Pete Davis', 'manual'),
 ]
 
 

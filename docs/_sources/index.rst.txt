@@ -40,12 +40,14 @@ You can set up auto-building on every save of a ``.rst`` file:
     pip install watchdog
 #. Run watchmedo to monitor all .rst files::
 
-watchmedo shell-command \
-   --patterns="*.rst" \
-   --ignore-pattern='_build/*' \
-   --recursive \
-   --wait \
-   --command='make html'
+.. code-block:: bash
+
+   watchmedo shell-command \
+      --patterns="*.rst" \
+      --ignore-pattern='_build/*' \
+      --recursive \
+      --wait \
+      --command='make html'
 
 .. toctree::
    :maxdepth: 2
